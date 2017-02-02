@@ -8,8 +8,9 @@
 
 body {
   overflow-x: hidden;
-  font-family: "Open Sans", sans-serif;
+  font-family: @font-family;
   margin: 0 auto;
+  background: @color-gray;
 }
 
 img {
@@ -22,7 +23,10 @@ h1 {
 }
 
 h2 {
-
+  font-family: @font-family;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 
 h3 {
@@ -30,7 +34,6 @@ h3 {
 }
 
 p {
-
 }
 
 a {
@@ -43,17 +46,53 @@ ul {
 }
 
 li{
+  text-decoration: none;
+  display: inline-block;
+  color: @color-white;
 }
 
 .wrapper {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 .clearfix::after {
   display: table;
   clear: both;
   content: "";
+}
+
+.icon-star-full{
+  display: inline-block;
+  width: 15px;
+  height: 14px;
+}
+
+.icon-star-empty{
+  display: inline-block;
+  width: 15px;
+  height: 14px;
+}
+
+.navigation-arrow-left{
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-image: url("../img/icon-left.png");
+  background-repeat: no-repeat;
+  background-color: @color-magenta;
+  background-position: 7px 6px;
+}
+
+.navigation-arrow-right{
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-image: url("../img/icon-left.png");
+  background-repeat: no-repeat;
+  background-color: @color-gray;
+  background-position: 7px 6px;
 }
