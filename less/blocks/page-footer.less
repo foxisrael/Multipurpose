@@ -8,7 +8,7 @@
   margin-right: -50vw;
   overflow: hidden;
   background-color: @color-darkgray;
-  color: @color-white;
+  color: @color-gray;
   padding: 60px 0 65px;
 }
 
@@ -17,9 +17,19 @@
   justify-content: space-between;
 }
 
-.page-footer__menu-information a{
+.page-footer__company-informnation{
+  width: 270px;
+}
+
+.page-footer__logo{
   display: block;
-  color: @color-white;
+  margin-bottom: 25px;
+}
+
+.page-footer__company-informnation p{
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: @color-gray;
 }
 
 .page-footer__logo{
@@ -35,7 +45,7 @@
 .page-footer__email{
   display: block;
   position: relative;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 .page-footer__adress:before{
@@ -46,7 +56,7 @@
   width: 9px;
   height: 13px;
   top: 0;
-  left: -15px;
+  left: -20px;
 }
 
 .page-footer__telephone:before{
@@ -57,7 +67,7 @@
   width: 12px;
   height: 12px;
   top: 0;
-  left: -15px;
+  left: -20px;
 }
 
 .page-footer__email:before{
@@ -68,17 +78,12 @@
   width: 14px;
   height: 11px;
   top: 0;
-  left: -15px;
+  left: -20px;
 }
 
 .page-footer__information li,
 .page-footer__our-social li{
   display: block;
-}
-
-.page-footer__our-social-left,
-.page-footer__our-social-right{
-  margin-left: 15px;
 }
 
 .page-footer__menu-copyright{
@@ -92,10 +97,194 @@
   background-color: @color-gray2;
   min-height: 140px;
   padding: 40px 0 30px;
-  color: @color-white;
+  color: @color-gray;
   text-align: center;
 }
 
+.page-footer__information,
+.page-footer__our-social,
+.page-footer__opening-time-payment-option{
+  position: relative;
+  top: 20px;
+}
+
+.page-footer__our-social{
+  width: 175px;
+}
+
+.page-footer__information h3,
+.page-footer__our-social h3,
+.page-footer__opening-time h3,
+.page-footer__payment-option h3{
+  font-size: 18px;
+  text-transform: uppercase;
+  color: @color-gray;
+  margin-bottom: 25px;
+}
+
+.page-footer__information a,
+.page-footer__our-social a,
+.page-footer__opening-time p{
+  font-size: 14px;
+  line-height: 30px;
+  color: @color-gray;
+}
+
+.page-footer__our-social-group{
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__our-social-left{
+  margin-right: 40px;
+}
+
+.page-footer__our-social a{
+  position: relative;
+  margin-left: 30px;
+}
+
+.page-footer__icon-google:before,
+.page-footer__icon-pinterest:before,
+.page-footer__icon-vimeo:before,
+.page-footer__icon-instagram:before,
+.page-footer__icon-facebook:before,
+.page-footer__icon-twitter:before,
+.page-footer__icon-rss:before,
+.page-footer__icon-youtube:before{
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+.page-footer__icon-google:before{
+  background-image: url("../img/icon-google.png");
+  width: 17px;
+  height: 11px;
+  top: 5px;
+  left: -30px;
+}
+
+.page-footer__icon-pinterest:before{
+  background-image: url("../img/icon-pinterest.png");
+  width: 10px;
+  height: 13px;
+  top: 5px;
+  left: -30px;
+}
+
+.page-footer__icon-vimeo:before{
+  background-image: url("../img/icon-vimeo.png");
+  width: 12px;
+  height: 11px;
+  top: 5px;
+  left: -30px;
+}
+
+.page-footer__icon-instagram:before{
+  background-image: url("../img/icon-instagram.png");
+  width: 12px;
+  height: 12px;
+  top: 5px;
+  left: -30px;
+}
+
+.page-footer__icon-facebook:before{
+  background-image: url("../img/icon-facebook.png");
+  width: 7px;
+  height: 13px;
+  top: 5px;
+  left: -30px;
+}
+
+.page-footer__icon-twitter:before{
+  background-image: url("../img/icon-twitter.png");
+  width: 12px;
+  height: 10px;
+  top: 5px;
+  left: -30px;
+}
+
+.page-footer__icon-rss:before{
+  background-image: url("../img/icon-rss.png");
+  width: 11px;
+  height: 11px;
+  top: 5px;
+  left: -30px;
+}
+
+.page-footer__icon-youtube:before{
+  background-image: url("../img/icon-youtube.png");
+  width: 12px;
+  height: 14px;
+  top: 5px;
+  left: -30px;
+}
+
+.page-footer__opening-time{
+  margin-bottom: 30px;
+}
+
+.page-footer__payment-option-group{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 260px;
+}
+
+.page-footer__payment-option-master-card,
+.page-footer__payment-option-discover,
+.page-footer__payment-option-american-express,
+.page-footer__payment-option-vise,
+.page-footer__payment-option-stripe,
+.page-footer__payment-option-f,
+.page-footer__payment-option-jsb{
+  display: block;
+  width: 46px;
+  height: 31px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.page-footer__payment-option-master-card{
+  background-image: url("../img/icon-master-card.png");
+  background-repeat: no-repeat;
+}
+
+.page-footer__payment-option-discover{
+  background-image: url("../img/icon-discover.png");
+  background-repeat: no-repeat;
+}
+
+.page-footer__payment-option-american-express{
+  background-image: url("../img/icon-american-express.png");
+  background-repeat: no-repeat;
+}
+
+.page-footer__payment-option-stripe{
+  background-image: url("../img/icon-stripe.png");
+  background-repeat: no-repeat;
+}
+
+.page-footer__payment-option-f{
+  background-image: url("../img/icon-f.png");
+  background-repeat: no-repeat;
+}
+
+.page-footer__payment-option-jsb{
+  background-image: url("../img/icon-jsb.png");
+  background-repeat: no-repeat;
+}
+
+.page-footer__payment-option-visa{
+  background-image: url("../img/icon-visa.png");
+  background-repeat: no-repeat;
+}
+
+
+
+
+
 .page-footer__menu-copyright a{
-  color: white;
+  color: @color-gray;
 }
