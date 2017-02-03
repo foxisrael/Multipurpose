@@ -1,26 +1,43 @@
 .navigation-horizontal {
-  position: relative;
-  width: 100vw;
-  min-height: 50px;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  overflow: hidden;
-  background-color: @color-red;
-  color: @color-white;
-  padding: 13px 0;
-  text-transform: uppercase;
+    position: relative;
+    width: 100vw;
+    min-height: 50px;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow: hidden;
+    background-color: @color-red;
+    color: @color-white;
+    padding: 13px 0;
+    text-transform: uppercase;
 }
 
-.navigation-horizontal .wrapper{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.navigation-horizontal .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navigation-horizontal a{
-  display: inline-block;
-  color: @color-white;
-  margin-left: 15px;
+.navigation-horizontal a {
+    display: inline-block;
+    color: @color-white;
+    margin-left: 15px;
+}
+
+.navigation-horizontal p {
+    margin-left: 55px;
+    position: relative;
+}
+
+.navigation-horizontal p:before {
+    display: block;
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-menu.png");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 13px;
+    top: 3px;
+    left: -31px;
 }

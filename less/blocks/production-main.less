@@ -1,9 +1,58 @@
-.production__left-image{
-  width: 277px;
-  height: 230px;
+.production-main{
+  display: flex;
+  width: 835px;
+  justify-content: space-between;
+  margin-bottom: 35px;
 }
 
-.production__right-image{
-  width: 277px;
-  height: 230px;
+.production__left,
+.production__right{
+  width: 400px;
+  height: 225px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  background: @color-white;
+  text-align: right;
+  padding: 55px 20px 0;
+}
+
+.production__left{
+  background-image: url("../img/fashion-sale-photo-1.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.production__right{
+  background-image: url("../img/fashion-sale-photo-2.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.production-main b{
+  font-size: 35px;
+  font-weight: 800;
+  color: @color-gray1;
+}
+
+.production-main a{
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: @color-blue;
+  border-bottom: 2px solid @color-blue;
+}
+
+.production__big-letter{
+  font-size: 40px;
+}
+
+.production-main p{
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.production-main__litte-text{
+  margin-top: 15px;
+  font-size: 10px;
+  color: @color-gray1;
 }

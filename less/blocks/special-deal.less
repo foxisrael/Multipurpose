@@ -1,7 +1,38 @@
-.special-deal{
-  width: 300px;
-  height: 425px;
-  padding: 25px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  background: @color-white;
+.special-deal {
+    width: 300px;
+    height: 425px;
+    padding: 25px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    background: @color-white;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.special-deal__header{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 50px;
+  border-bottom: 2px solid @color-gray;
+  margin-bottom: 25px;
+}
+
+.special-deal__main{
+  margin-bottom: 20px;
+}
+
+.special-deal__price-old,
+.special-deal__price-new{
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.special-deal__price-old{
+  text-decoration: line-through;
+  color: #636363;
+  margin-right: 12px;
+}
+
+.special-deal__price-new{
+  font-weight: bold;
 }
